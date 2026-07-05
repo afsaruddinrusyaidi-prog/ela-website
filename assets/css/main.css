@@ -726,3 +726,110 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 800; line-height
 }
 .features-band .item b { display: block; color: #fff; font-family: var(--font-display); font-size: 15.5px; }
 .features-band .item p { color: #a9b1c8; font-size: 13.5px; margin-top: 4px; }
+
+/* ============================================================
+   v4 — Horizon-style components (inset hero, about strip,
+   plain stats, equal track cards)
+   ============================================================ */
+
+/* ---------- rounded inset photo hero (hero lives inside the page frame) ---------- */
+.hero-inset { padding: 22px 0 0; }
+.hero-inset .frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  min-height: min(62vh, 540px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-inset .frame img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-inset .frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 19, 33, 0.55), rgba(11, 19, 33, 0.72));
+}
+.hero-inset .inner { position: relative; z-index: 2; padding: 70px 26px; max-width: 760px; }
+.hero-inset h1 { color: #fff; font-size: clamp(30px, 4.6vw, 52px); }
+.hero-inset .sub { color: #d5dbe7; font-size: 16.5px; max-width: 52ch; margin: 16px auto 0; }
+.hero-inset .cta { margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.hero-inset .corner {
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------- about strip: pill label left, big statement right ---------- */
+.about-strip { display: grid; grid-template-columns: 180px 1fr; gap: 28px; align-items: start; }
+@media (max-width: 760px) { .about-strip { grid-template-columns: 1fr; gap: 14px; } }
+.pill-label {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy2);
+  white-space: nowrap;
+}
+.about-strip .statement {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.6vw, 28px);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+  max-width: 30ch;
+}
+.about-strip .statement strong { color: var(--amber); font-weight: 800; }
+
+/* ---------- plain stats (no boxes — Horizon style) ---------- */
+.plain-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; text-align: center; }
+@media (max-width: 760px) { .plain-stats { grid-template-columns: repeat(2, 1fr); } }
+.plain-stats .num { font-family: var(--font-display); font-size: clamp(32px, 4vw, 46px); font-weight: 700; color: var(--navy); line-height: 1; letter-spacing: -0.02em; }
+.plain-stats .lbl { font-size: 13.5px; color: var(--grey); margin-top: 10px; }
+
+/* ---------- equal track cards (4 equals — no spotlight) ---------- */
+.track-equal {
+  background: var(--paper);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 30px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.track-equal:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.track-equal .head { display: flex; align-items: center; gap: 15px; }
+.track-equal .head .icon { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; color: #fff; flex-shrink: 0; }
+.track-equal.t-amber .head .icon { background: var(--amber); color: var(--navy); }
+.track-equal.t-blue .head .icon { background: var(--blue); }
+.track-equal.t-purple .head .icon { background: var(--purple); }
+.track-equal.t-red .head .icon { background: var(--red); }
+.track-equal .head h3 { font-size: 24px; }
+.track-equal .head .fn { font-size: 12.5px; font-weight: 600; color: var(--grey); margin-top: 2px; }
+.track-equal .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 4px; }
+.track-equal .pills span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--cream);
+  color: var(--navy2);
+  border-radius: 999px;
+  padding: 5px 12px;
+}
+.track-equal > p.blurb { font-size: 14.5px; color: var(--grey); margin-top: 12px; }
+.track-equal ul { margin-top: 14px; display: flex; flex-direction: column; gap: 9px; }
+.track-equal ul li { display: flex; gap: 10px; font-size: 13.5px; color: var(--navy2); font-weight: 500; }
+.track-equal ul li::before { content: "✦"; font-size: 11px; margin-top: 2px; }
+.track-equal.t-amber ul li::before { color: var(--amber); }
+.track-equal.t-blue ul li::before { color: var(--blue); }
+.track-equal.t-purple ul li::before { color: var(--purple); }
+.track-equal.t-red ul li::before { color: var(--red); }
