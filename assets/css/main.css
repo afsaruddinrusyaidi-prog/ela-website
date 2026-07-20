@@ -922,3 +922,21 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 800; line-height
 .person-card h3 { margin-top: 16px; }
 .person-card .team { margin: 14px 20px 0; padding: 12px 0 16px; }
 .person-card:hover .avatar { filter: saturate(1.15); }
+
+/* v3 flagship numerals (initiatives) */
+.card .wm {
+  position: absolute; top: 18px; right: 22px;
+  font-family: var(--font-display); font-weight: 800; font-size: 44px; line-height: 1;
+  color: rgba(11,19,33,.07); pointer-events: none;
+}
+.card { position: relative; }
+
+/* v3 media masonry — photo grid becomes columns with varied heights */
+#photo-grid { display: block; columns: 4; column-gap: 14px; }
+#photo-grid .photo-cell { width: 100%; margin: 0 0 14px; display: block; break-inside: avoid; aspect-ratio: auto; }
+#photo-grid .photo-cell img { aspect-ratio: auto; }
+#photo-grid .photo-cell:nth-child(5n+1) img { aspect-ratio: 3/4; }
+#photo-grid .photo-cell:nth-child(5n+3) img { aspect-ratio: 1/1; }
+#photo-grid .photo-cell:nth-child(5n+4) img { aspect-ratio: 4/3; }
+@media (max-width: 1000px) { #photo-grid { columns: 3; } }
+@media (max-width: 720px) { #photo-grid { columns: 2; } }
