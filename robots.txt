@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://afsaruddinrusyaidi-prog.github.io/ela-website/sitemap.xml
+Sitemap: https://emergingleadersasia.com/sitemap.xml
