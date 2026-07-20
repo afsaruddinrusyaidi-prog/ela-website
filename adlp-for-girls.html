@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- STAGING: unlisted preview — remove the noindex line + wire nav/track links when going public -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>ADLP for Girls x Codex 2026 — Emerging Leaders Asia</title>
+  <meta name="description" content="A fully sponsored five-day AI startup bootcamp for Malaysian women aged 18 to 24. Build a working product with Codex and pitch it on Demo Day. 10–14 September 2026, Kuala Lumpur.">
+  <meta property="og:title" content="ADLP for Girls x Codex 2026">
+  <meta property="og:description" content="80 participants · 20 teams · 5 days · RM12,000 up for grabs. A fully sponsored AI startup bootcamp for Malaysian women aged 18–24.">
+  <meta property="og:image" content="https://emergingleadersasia.com/assets/img/adlp/adlp-for-girls-logo.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b1321'/%3E%3Cpath d='M50 14l9 27 27 9-27 9-9 27-9-27-27-9 27-9z' fill='%23f59e0b'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=4">
+  <style>
+    /* ---- ADLP for Girls x Codex — page accents (scoped) ---- */
+    .adlp { --adlp-orange:#f4791f; --adlp-pink:#e0186e; --adlp-purple:#7a3fc9; }
+    .adlp .grad-text {
+      background: linear-gradient(90deg, var(--adlp-orange), var(--adlp-pink), #9a63e8);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .adlp-hero {
+      position: relative; overflow: hidden; background: #070c18; color: #fff;
+      padding: clamp(96px, 16vh, 150px) 0 clamp(64px, 10vh, 96px);
+    }
+    .adlp-hero .glow { position: absolute; border-radius: 50%; pointer-events: none; filter: blur(110px); }
+    .adlp-hero .g1 { width: 28rem; height: 28rem; left: -8rem; top: 6rem; background: rgba(122,63,201,.25); }
+    .adlp-hero .g2 { width: 32rem; height: 32rem; right: -9rem; top: 1.5rem; background: rgba(224,24,110,.20); }
+    .adlp-hero .g3 { width: 42rem; height: 18rem; left: 50%; bottom: -4rem; transform: translateX(-50%); background: rgba(244,121,31,.15); }
+    .adlp-hero .shell { position: relative; }
+    .adlp-hero .logo-lockup { width: 100%; max-width: 310px; height: auto; }
+    .adlp-hero .powered {
+      margin-top: 20px; font-size: 12px; font-weight: 800; letter-spacing: .18em;
+      text-transform: uppercase; color: rgba(255,255,255,.55);
+    }
+    .adlp-hero h1 {
+      margin-top: 30px; max-width: 15ch; color: #fff;
+      font-size: clamp(38px, 6vw, 68px); line-height: 1.04; letter-spacing: -0.02em;
+    }
+    .adlp-hero .sub { margin-top: 22px; max-width: 58ch; font-size: 17px; color: rgba(255,255,255,.78); }
+    .adlp-hero .facts {
+      margin-top: 30px; max-width: 760px; padding: 16px 20px;
+      border: 1px solid rgba(255,255,255,.12); border-radius: 16px;
+      background: rgba(255,255,255,.06); backdrop-filter: blur(4px);
+      font-size: 14px; font-weight: 600; color: rgba(255,255,255,.82); line-height: 1.7;
+    }
+    .btn-adlp {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: linear-gradient(90deg, var(--adlp-orange), var(--adlp-pink), var(--adlp-purple));
+      color: #fff; border-radius: 999px; padding: 15px 30px;
+      font-weight: 800; font-size: 14.5px; font-family: var(--font-display);
+      box-shadow: 0 18px 45px -16px rgba(224,24,110,.8);
+      transition: transform .3s var(--ease);
+    }
+    .btn-adlp:hover { transform: translateY(-3px); }
+    .adlp-stats { display: grid; grid-template-columns: repeat(4, 1fr); overflow: hidden;
+      border: 1px solid var(--line); border-radius: 26px; background: var(--paper); }
+    .adlp-stats .cell { padding: 30px 18px; text-align: center; border-left: 1px solid var(--line); }
+    .adlp-stats .cell:first-child { border-left: none; }
+    .adlp-stats .num { font-family: var(--font-display); font-weight: 800; font-size: 36px; color: var(--navy); }
+    .adlp-stats .lbl { margin-top: 6px; font-size: 11px; font-weight: 800; letter-spacing: .16em; color: var(--grey); }
+    @media (max-width: 720px) {
+      .adlp-stats { grid-template-columns: 1fr 1fr; }
+      .adlp-stats .cell:nth-child(odd) { border-left: none; }
+      .adlp-stats .cell:nth-child(n+3) { border-top: 1px solid var(--line); }
+    }
+    .adlp-quote {
+      position: relative; overflow: hidden; margin: 40px auto 0; max-width: 860px;
+      background: var(--navy); color: rgba(255,255,255,.75); border-radius: 28px; padding: clamp(28px, 4vw, 42px);
+    }
+    .adlp-quote .spark { position: absolute; right: -80px; top: -80px; width: 256px; height: 256px;
+      border-radius: 50%; background: rgba(224,24,110,.25); filter: blur(48px); }
+    .adlp-quote p { position: relative; margin-top: 16px; font-size: 16.5px; }
+    .adlp-quote p:first-of-type { margin-top: 22px; }
+    .pillar-grid { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; margin-top: 44px; }
+    @media (max-width: 820px) { .pillar-grid { grid-template-columns: 1fr; } }
+    .pillar {
+      position: relative; border: 1px solid var(--line); border-radius: 24px; background: var(--paper);
+      padding: 30px; transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+    }
+    .pillar:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .pillar .p-icon { display: inline-flex; width: 50px; height: 50px; align-items: center; justify-content: center; border-radius: 16px; }
+    .pillar .p-num { position: absolute; top: 28px; right: 28px; font-family: var(--font-display); font-weight: 800; font-size: 14px; color: rgba(11,19,33,.2); }
+    .pillar h3 { margin-top: 22px; font-size: 21px; }
+    .pillar p { margin-top: 8px; color: var(--grey); font-size: 15px; }
+    .adlp-journey { position: relative; margin-top: 48px; }
+    .adlp-journey::before { content: ""; position: absolute; left: 25px; top: 10px; bottom: 10px; width: 3px; border-radius: 2px;
+      background: linear-gradient(180deg, var(--adlp-orange), var(--adlp-pink), var(--adlp-purple)); }
+    .adlp-journey .step { position: relative; padding: 0 0 26px 74px; }
+    .adlp-journey .step:last-child { padding-bottom: 0; }
+    .adlp-journey .dot {
+      position: absolute; left: 0; top: 0; width: 52px; height: 52px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; color: #fff;
+      background: linear-gradient(135deg, var(--adlp-orange), var(--adlp-pink), var(--adlp-purple));
+      border: 4px solid var(--bg); box-shadow: var(--shadow);
+    }
+    .adlp-journey .step-card { border: 1px solid var(--line); border-radius: 22px; background: var(--paper); padding: 24px 26px; box-shadow: 0 4px 14px rgba(11,19,33,.04); }
+    .adlp-journey .day { font-size: 11px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--adlp-pink); }
+    .adlp-journey h3 { margin-top: 6px; font-size: 20px; }
+    .adlp-journey p { margin-top: 6px; color: var(--grey); font-size: 14.5px; }
+    .logi-grid { display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; border: 1px solid var(--line); border-radius: 26px; background: var(--paper); }
+    @media (max-width: 680px) { .logi-grid { grid-template-columns: 1fr; } }
+    .logi-grid .item { padding: 26px 28px; border-top: 1px solid var(--line); }
+    .logi-grid .item:nth-child(1), .logi-grid .item:nth-child(2) { border-top: none; }
+    .logi-grid .item:nth-child(even) { border-left: 1px solid var(--line); }
+    @media (max-width: 680px) {
+      .logi-grid .item { border-left: none !important; }
+      .logi-grid .item:nth-child(2) { border-top: 1px solid var(--line); }
+    }
+    .logi-grid .k { margin-top: 14px; font-size: 11px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; color: var(--grey); }
+    .logi-grid .v { margin-top: 6px; font-size: 14.5px; font-weight: 700; color: var(--navy); line-height: 1.55; }
+    .logi-grid svg { color: var(--adlp-pink); }
+    .adlp-faq { border: 1px solid var(--line); border-radius: 24px; background: var(--paper); padding: 6px 26px; }
+    .adlp-faq details { border-top: 1px solid var(--line); }
+    .adlp-faq details:first-child { border-top: none; }
+    .adlp-faq summary {
+      cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      padding: 19px 0; font-family: var(--font-display); font-weight: 700; font-size: 16px; color: var(--navy);
+    }
+    .adlp-faq summary::-webkit-details-marker { display: none; }
+    .adlp-faq summary::after { content: "+"; font-weight: 600; font-size: 22px; color: var(--adlp-pink); transition: transform .25s var(--ease); }
+    .adlp-faq details[open] summary::after { transform: rotate(45deg); }
+    .adlp-faq .a { padding: 0 32px 20px 0; color: var(--grey); font-size: 15px; }
+    .org-grid { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); margin-top: 44px; }
+    @media (max-width: 860px) { .org-grid { grid-template-columns: 1fr; } }
+    .org { border: 1px solid var(--line); border-radius: 26px; background: var(--paper); padding: 30px; }
+    .org img { height: 64px; width: auto; object-fit: contain; border-radius: 16px; }
+    .org h3 { margin-top: 26px; font-size: 21px; }
+    .org p { margin-top: 8px; color: var(--grey); font-size: 15px; }
+    .adlp-cta {
+      position: relative; overflow: hidden; border-radius: 34px; background: #070c18; color: #fff;
+      text-align: center; padding: clamp(56px, 9vw, 84px) 24px; margin: 0 0 26px;
+    }
+    .adlp-cta .glow { position: absolute; border-radius: 50%; filter: blur(100px); pointer-events: none; }
+    .adlp-cta .g1 { width: 20rem; height: 20rem; left: -7rem; bottom: -4rem; background: rgba(244,121,31,.25); }
+    .adlp-cta .g2 { width: 20rem; height: 20rem; right: -7rem; top: -4rem; background: rgba(122,63,201,.3); }
+    .adlp-cta h2 { position: relative; color: #fff; font-size: clamp(30px, 4.6vw, 48px); line-height: 1.1; max-width: 22ch; margin: 22px auto 0; }
+    .adlp-cta .close-note { position: relative; margin-top: 20px; font-size: 16px; color: rgba(255,255,255,.62); }
+    .adlp .section-note { text-align:center; font-size: 13px; color: var(--grey); margin-top: 10px; }
+  </style>
+</head>
+<body class="adlp">
+
+  <!-- ================= NAV ================= -->
+  <header class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/ELA-Logo.png" alt="Emerging Leaders Asia — official logo">
+      </a>
+      <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="ecosystem.html">The Ecosystem</a>
+        <a href="initiatives.html">Initiatives</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="media.html">Media</a>
+        <a class="nav-cta" href="https://candidate.axiata.talentpulse.accendo.com.my/invitation/journey/?journey_unique_token=Ih46s9Psk0eqCZvZvnhDCZmQcNyIdwW4" target="_blank" rel="noopener">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="adlp-hero">
+    <div class="glow g1" aria-hidden="true"></div>
+    <div class="glow g2" aria-hidden="true"></div>
+    <div class="glow g3" aria-hidden="true"></div>
+    <div class="shell">
+      <img class="logo-lockup" src="assets/img/adlp/adlp-for-girls-logo.png" alt="ADLP For Girls x Codex 2026">
+      <p class="powered">Powered by Emerging Leaders Asia</p>
+      <h1>ADLP for Girls x <span class="grad-text">Codex 2026</span></h1>
+      <p class="sub">A fully sponsored five-day AI startup bootcamp for Malaysian women aged 18 to 24. Arrive with an idea or none at all. Leave with a working product and a Demo Day pitch.</p>
+      <p class="facts">10–14 September 2026&ensp;|&ensp;Perdana Hotel, Kuala Lumpur City Centre&ensp;|&ensp;Fully sponsored&ensp;|&ensp;By selection only</p>
+      <p style="margin-top:34px;">
+        <a class="btn-adlp" href="https://candidate.axiata.talentpulse.accendo.com.my/invitation/journey/?journey_unique_token=Ih46s9Psk0eqCZvZvnhDCZmQcNyIdwW4" target="_blank" rel="noopener noreferrer">
+          Apply now
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= THE BRIEF ================= -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head center reveal">
+        <p class="kicker">The Brief</p>
+        <h2 class="h-section">Find a Real Problem. Build with AI. Pitch It in Five Days.</h2>
+      </div>
+      <div class="adlp-stats reveal">
+        <div class="cell"><div class="num"><span data-count="80">0</span></div><div class="lbl">PARTICIPANTS</div></div>
+        <div class="cell"><div class="num"><span data-count="20">0</span></div><div class="lbl">TEAMS</div></div>
+        <div class="cell"><div class="num"><span data-count="5">0</span></div><div class="lbl">DAYS</div></div>
+        <div class="cell"><div class="num">RM<span data-count="12" data-suffix="K">0</span></div><div class="lbl">UP FOR GRABS</div></div>
+      </div>
+      <div class="adlp-quote reveal">
+        <div class="spark" aria-hidden="true"></div>
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f4791f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:relative;" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+        <p>This is founder training, not a classroom. You learn leadership by running a team, business by validating a real problem, and AI by shipping with it.</p>
+        <p>Every session produces something real. By Day 4 your team has a working prototype. By Day 5 you are on stage pitching it.</p>
+        <p>And it is genuinely fun. Five days living in a hotel with 79 other builders, late-night sprints, pizza night, and a Demo Day you will not forget.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOUR PILLARS ================= -->
+  <section class="band" style="padding:clamp(56px,9vh,92px) 0;">
+    <div class="shell">
+      <div class="section-head center reveal">
+        <p class="kicker">The Four Pillars</p>
+        <h2 class="h-section">Built Like a Founder Sprint, Not a Classroom</h2>
+      </div>
+      <div class="pillar-grid">
+        <article class="pillar reveal">
+          <span class="p-icon" style="background:rgba(244,121,31,.1);color:#f4791f;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 7a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM4 22v-2c0-2.8 3.6-4.5 8-4.5s8 1.7 8 4.5v2H4zm8-9c-2.2 0-4-1.8-4-4h8c0 2.2-1.8 4-4 4z"/></svg></span>
+          <span class="p-num">01</span>
+          <h3>80 women, 5 days.</h3>
+          <p>Live and build together with ambitious women selected from universities across Malaysia.</p>
+        </article>
+        <article class="pillar reveal">
+          <span class="p-icon" style="background:rgba(224,24,110,.1);color:#e0186e;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 2.4 1.2 4.5 3 5.7V17a1 1 0 001 1h6a1 1 0 001-1v-2.3c1.8-1.3 3-3.4 3-5.7a7 7 0 00-7-7zm-3 18h6v1a1 1 0 01-1 1h-4a1 1 0 01-1-1v-1z"/></svg></span>
+          <span class="p-num">02</span>
+          <h3>AI-driven by design.</h3>
+          <p>Every team builds with real AI tools from day one. No slides about AI. Actual AI in your hands.</p>
+        </article>
+        <article class="pillar reveal">
+          <span class="p-icon" style="background:rgba(122,63,201,.1);color:#7a3fc9;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c3 2 5 6 5 10l3 4-4-1c-1 2-2.5 3.5-4 5-1.5-1.5-3-3-4-5l-4 1 3-4c0-4 2-8 5-10zm0 8a1.8 1.8 0 100-3.6A1.8 1.8 0 0012 10z"/></svg></span>
+          <span class="p-num">03</span>
+          <h3>Everyone ships.</h3>
+          <p>Every team walks out with a working product, not a concept.</p>
+        </article>
+        <article class="pillar reveal">
+          <span class="p-icon" style="background:rgba(244,121,31,.1);color:#f4791f;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3h14v2h3v3c0 2.5-1.8 4.5-4.2 4.9A7 7 0 0113 17v2h4v2H7v-2h4v-2a7 7 0 01-4.8-4.1C3.8 12.5 2 10.5 2 8V5h3V3zm-1 4v1c0 1.2.7 2.2 1.7 2.7A9 9 0 015.1 7H4zm16 0h-1.1a9 9 0 01-.6 3.7c1-.5 1.7-1.5 1.7-2.7V7z"/></svg></span>
+          <span class="p-num">04</span>
+          <h3>RM12,000 up for grabs.</h3>
+          <p>Top teams on Demo Day share a prize pool of up to RM12,000.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHO IS BEHIND THIS ================= -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head reveal">
+        <p class="kicker">Who Is Behind This</p>
+        <h2 class="h-section">Organised by Alumni. Powered by Codex. Backed by Axiata Foundation.</h2>
+      </div>
+      <div class="adlp-quote reveal" style="margin-top:0;max-width:none;">
+        <div class="spark" style="background:rgba(122,63,201,.25);" aria-hidden="true"></div>
+        <p style="margin-top:0;">ADLP for Girls x Codex is organised by Emerging Leaders Asia, the alumni network of the Axiata Young Talent Programme. Your co-leads, floor mentors, and coaches came through the same ecosystem and now work in tech and business across the region.</p>
+        <p>Codex provides the AI toolkit every team builds with, and Axiata Foundation sponsors the full residential experience.</p>
+        <p>The goal is simple. Malaysian women outperform in education but remain underrepresented as tech founders. We want this programme to help change that.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CODEX TOOLKIT ================= -->
+  <section class="band-deep" style="padding:clamp(56px,9vh,92px) 0;">
+    <div class="shell">
+      <div class="section-head center reveal">
+        <p class="kicker">Your AI Toolkit</p>
+        <h2 class="h-section">Codex Is Your Team's AI Engineer</h2>
+        <p class="lede" style="margin-left:auto;margin-right:auto;">Codex is OpenAI's AI coding agent. You describe what you want to build, and it writes the code, fixes the bugs, and handles the engineering while your team focuses on the problem, the user, and the pitch.</p>
+        <p class="lede" style="margin:14px auto 0;">Every team gets trained on it on Day 3, then uses it through the Build Sprint all the way to Demo Day.</p>
+      </div>
+      <div class="reveal" style="max-width:640px;margin:0 auto;">
+        <article style="position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);border-radius:26px;padding:32px;display:flex;align-items:center;gap:26px;">
+          <img src="assets/img/adlp/codex-logo.png" alt="Codex logo" width="96" height="96" style="border-radius:24px;flex-shrink:0;">
+          <div>
+            <h3 style="font-size:23px;">Codex</h3>
+            <p style="margin-top:8px;color:#a9b1c8;font-size:15px;">Provisioned free for every participant, from the first sprint to the final pitch.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5-DAY JOURNEY ================= -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head center reveal">
+        <p class="kicker">Your 5-Day Journey</p>
+        <h2 class="h-section">Five Days from Team Formation to Demo Day</h2>
+        <p class="section-note">Draft outline. Final agenda to be confirmed.</p>
+      </div>
+      <div class="adlp-journey" style="max-width:780px;margin-left:auto;margin-right:auto;">
+        <div class="step reveal">
+          <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 7a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM4 22v-2c0-2.8 3.6-4.5 8-4.5s8 1.7 8 4.5v2H4z"/></svg></span>
+          <div class="step-card">
+            <p class="day">Day 1</p>
+            <h3>Leadership &amp; Team Formation</h3>
+            <p>Build your leadership foundation, meet your cohort, and form your team of four.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 2.4 1.2 4.5 3 5.7V17a1 1 0 001 1h6a1 1 0 001-1v-2.3c1.8-1.3 3-3.4 3-5.7a7 7 0 00-7-7zm-3 18h6v1a1 1 0 01-1 1h-4a1 1 0 01-1-1v-1z"/></svg></span>
+          <div class="step-card">
+            <p class="day">Day 2</p>
+            <h3>Find the Problem</h3>
+            <p>Identify and validate a real problem worth solving.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a4 4 0 014 4c0 .7-.2 1.4-.5 2H17a3 3 0 013 3c0 .8-.3 1.6-.9 2.1.6.6.9 1.3.9 2.1a3 3 0 01-3 3h-1.5c.3.6.5 1.3.5 2a4 4 0 01-8 0c0-.7.2-1.4.5-2H7a3 3 0 01-3-3c0-.8.3-1.5.9-2.1A3 3 0 014 11a3 3 0 013-3h1.5A4.2 4.2 0 018 6a4 4 0 014-4z"/></svg></span>
+          <div class="step-card">
+            <p class="day">Day 3</p>
+            <h3>AI Immersion</h3>
+            <p>Learn Codex and the AI tools your team will use to turn the idea into a product.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 5h16a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm-2 14h20v2H2v-2z"/></svg></span>
+          <div class="step-card">
+            <p class="day">Day 4</p>
+            <h3>Build Sprint</h3>
+            <p>Build, test, and polish your product with floor mentors unblocking your team on the spot.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3h14v2h3v3c0 2.5-1.8 4.5-4.2 4.9A7 7 0 0113 17v2h4v2H7v-2h4v-2a7 7 0 01-4.8-4.1C3.8 12.5 2 10.5 2 8V5h3V3z"/></svg></span>
+          <div class="step-card">
+            <p class="day">Day 5</p>
+            <h3>Demo Day</h3>
+            <p>Twenty teams. Ten minutes each. Live judges. Up to RM12,000 in prizes for the top teams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOGISTICS ================= -->
+  <section class="band" style="padding:clamp(56px,9vh,92px) 0;">
+    <div class="shell">
+      <div class="section-head center reveal">
+        <p class="kicker">Logistics</p>
+        <h2 class="h-section">Everything You Need to Show Up Ready</h2>
+      </div>
+      <div class="logi-grid reveal" style="max-width:900px;margin:0 auto;">
+        <div class="item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h2v2h6V2h2v2h3a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1h3V2zm13 8H4v10h16V10z"/></svg>
+          <p class="k">Dates</p>
+          <p class="v">10 to 14 September 2026 (5 days, 4 nights)</p>
+        </div>
+        <div class="item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 017 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6.5a2.5 2.5 0 000 5z"/></svg>
+          <p class="k">Venue</p>
+          <p class="v">Perdana Hotel, Kuala Lumpur City Centre</p>
+        </div>
+        <div class="item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 7H5a1 1 0 01 0-2h14V3H5a3 3 0 00-3 3v12a3 3 0 003 3h16a1 1 0 001-1V8a1 1 0 00-1-1zm-4 7a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/></svg>
+          <p class="k">Cost</p>
+          <p class="v">Fully sponsored, including accommodation, meals, and AI tool access</p>
+        </div>
+        <div class="item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 7a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM4 22v-2c0-2.8 3.6-4.5 8-4.5s8 1.7 8 4.5v2H4z"/></svg>
+          <p class="k">Eligibility</p>
+          <p class="v">Malaysian women aged 18 to 24, by selection</p>
+        </div>
+        <div class="item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 5h16a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm-2 14h20v2H2v-2z"/></svg>
+          <p class="k">Bring</p>
+          <p class="v">A laptop, a charger, and a problem you care about</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section">
+    <div class="shell">
+      <div class="section-head center reveal">
+        <p class="kicker">FAQ</p>
+        <h2 class="h-section">Before You Apply</h2>
+      </div>
+      <div class="adlp-faq reveal" style="max-width:820px;margin:0 auto;">
+        <details>
+          <summary>Who can apply?</summary>
+          <div class="a">Malaysian women aged 18 to 24. You do not need to be studying ICT or computer science. If you are curious about building with AI and willing to work hard for five days, apply.</div>
+        </details>
+        <details>
+          <summary>Do I need coding experience or a startup idea?</summary>
+          <div class="a">No to both. Codex handles the code, and Day 2 is designed to help your team find and validate a problem worth solving. Plenty of great teams will walk in with nothing but curiosity.</div>
+        </details>
+        <details>
+          <summary>How much does it cost?</summary>
+          <div class="a">Nothing. The programme is fully sponsored, including accommodation, meals, and AI tool access.</div>
+        </details>
+        <details>
+          <summary>How are teams formed?</summary>
+          <div class="a">Teams of four are formed on Day 1. You do not need to apply with a team, and you cannot pre-select teammates. Part of the experience is learning to build with people you just met.</div>
+        </details>
+        <details>
+          <summary>What should I bring?</summary>
+          <div class="a">A laptop, a charger, and a problem you care about. Everything else is provided.</div>
+        </details>
+        <details>
+          <summary>Do I have to stay at the hotel for all five days?</summary>
+          <div class="a">Yes. This is a full residential programme and the schedule runs day and night. Accommodation is provided and sponsored.</div>
+        </details>
+        <details>
+          <summary>What happens on Demo Day?</summary>
+          <div class="a">All twenty teams pitch their working product live to a panel of judges, ten minutes each. Top teams share a prize pool of up to RM12,000.</div>
+        </details>
+        <details>
+          <summary>What happens after the programme?</summary>
+          <div class="a">You leave with a working product, a pitch you have delivered on stage, and access to the Emerging Leaders Asia network of alumni, mentors, and coaches.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CO-ORGANISERS ================= -->
+  <section class="band" style="padding:clamp(56px,9vh,92px) 0;">
+    <div class="shell">
+      <div class="section-head center reveal">
+        <p class="kicker">Our Co-Organisers</p>
+        <h2 class="h-section">Codex. Axiata Foundation. Emerging Leaders Asia.</h2>
+      </div>
+      <div class="org-grid">
+        <article class="org reveal">
+          <img src="assets/img/adlp/codex-logo.png" alt="Codex logo">
+          <h3>Codex</h3>
+          <p>OpenAI's AI coding agent, the tool every team learns on Day 3 and builds with through Demo Day.</p>
+        </article>
+        <article class="org reveal">
+          <img src="assets/img/adlp/axiata-foundation.png" alt="Axiata Foundation logo">
+          <h3>Axiata Foundation</h3>
+          <p>Co-organiser and sponsor of the fully sponsored residential founder experience.</p>
+        </article>
+        <article class="org reveal">
+          <img src="assets/img/ELA-Logo.png" alt="Emerging Leaders Asia logo">
+          <h3>Emerging Leaders Asia</h3>
+          <p>The AYTP alumni network organising the programme, providing trained co-leads, floor mentors, and industry coaches.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="section" id="register" style="padding-top:0;">
+    <div class="shell">
+      <div class="adlp-cta reveal">
+        <div class="glow g1" aria-hidden="true"></div>
+        <div class="glow g2" aria-hidden="true"></div>
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f4791f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position:relative;" aria-hidden="true"><path d="M12 3a6 6 0 009 9 9 9 0 11-9-9z"/><path d="M19 3v4M21 5h-4"/></svg>
+        <h2>Eighty places. Five days. <span class="grad-text">RM12,000 on the line.</span></h2>
+        <p class="close-note">Selection is competitive. Applications close 15 August 2026.</p>
+        <p style="position:relative;margin-top:30px;">
+          <a class="btn-adlp" href="https://candidate.axiata.talentpulse.accendo.com.my/invitation/journey/?journey_unique_token=Ih46s9Psk0eqCZvZvnhDCZmQcNyIdwW4" target="_blank" rel="noopener noreferrer">
+            Apply now
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div>
+          <span class="logo-chip"><img src="assets/img/ELA-Logo.png" alt="Emerging Leaders Asia logo"></span>
+          <p>The premier alumni continuity engine of the Axiata Young Talent Programme — empowering the next generation of ASEAN leaders.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="ecosystem.html">The Ecosystem</a></li>
+            <li><a href="initiatives.html">Initiatives</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="media.html">Media</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tracks</h4>
+          <ul>
+            <li><a href="ecosystem.html#sldp">SLDP</a></li>
+            <li><a href="ecosystem.html#uldp">ULDP</a></li>
+            <li><a href="ecosystem.html#adlp">ADLP</a></li>
+            <li><a href="ecosystem.html#ycdp">YCDP</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Channels</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/emergingleadersasia/" target="_blank" rel="noopener">@emergingleadersasia</a></li>
+            <li><a href="https://www.instagram.com/emergingcorpleaders/" target="_blank" rel="noopener">@emergingcorpleaders</a></li>
+            <li><a href="https://www.instagram.com/axiatayoungtalentprogramme/" target="_blank" rel="noopener">@axiatayoungtalentprogramme</a></li>
+            <li><a href="https://linktr.ee/emergingcorpleaders" target="_blank" rel="noopener">ECL Linktree</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Emerging Leaders Asia. All rights reserved.</span>
+        <span>An alumni initiative of the Axiata Young Talent Programme.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
