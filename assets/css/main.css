@@ -904,3 +904,21 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 800; line-height
   .pipeline .stage { grid-template-columns: 58px 1fr; gap: 12px; }
   .pipeline .pnum::before { width: 48px; height: 56px; }
 }
+
+/* v3 monogram tiles (leadership) — Ragged Edge colour-field treatment */
+.person-card { padding: 0; overflow: hidden; border-top: none; }
+.person-card .avatar {
+  width: 100%; height: auto; aspect-ratio: 5/4; border-radius: 0; margin: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 800; font-size: clamp(52px, 6vw, 84px);
+  color: rgba(255,255,255,.92);
+  background: linear-gradient(150deg, var(--amber), #d97706);
+  text-shadow: 0 4px 22px rgba(11,19,33,.22);
+}
+.person-card.t-blue .avatar { background: linear-gradient(150deg, var(--blue), #1479ab); }
+.person-card.t-purple .avatar { background: linear-gradient(150deg, #6a5acd, var(--purple)); }
+.person-card.t-red .avatar { background: linear-gradient(150deg, var(--red), #b3212d); }
+.person-card h3, .person-card .role { padding: 0 20px; }
+.person-card h3 { margin-top: 16px; }
+.person-card .team { margin: 14px 20px 0; padding: 12px 0 16px; }
+.person-card:hover .avatar { filter: saturate(1.15); }
