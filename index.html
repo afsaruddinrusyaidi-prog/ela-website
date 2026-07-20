@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css?v=4">
+  <link rel="stylesheet" href="assets/css/main.css?v=5">
 </head>
 <body>
 
@@ -38,6 +38,8 @@
   <!-- ================= HERO (full-bleed photo) ================= -->
   <div class="hero-full">
     <div class="bg"><img src="assets/video/v00_ela.jpg" alt="The ELA community at the Run & Makan session, Perdana Botanical Garden KL" fetchpriority="high"></div>
+    <svg class="geo float" style="position:absolute;top:18%;right:9%;color:var(--amber);z-index:2;" width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
+    <svg class="geo float" style="position:absolute;top:56%;right:22%;color:rgba(255,255,255,.7);animation-delay:1.8s;z-index:2;" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg>
     <div class="shell">
       <p class="kicker">✦ The Official AYTP Alumni Continuity Engine</p>
       <h1>Empowering the Next Generation of <em>ASEAN Leaders</em></h1>
@@ -85,20 +87,29 @@
     </div>
   </section>
 
-  <!-- ================= PARTNERS ================= -->
-  <section class="band" style="padding:52px 0;">
-    <div class="shell center reveal" style="margin-bottom:28px;">
+  <!-- ================= PARTNERS (v3 ticker) ================= -->
+  <section class="band" style="padding:44px 0;">
+    <div class="shell center reveal" style="margin-bottom:24px;">
       <p class="kicker">Ecosystem Footprint</p>
       <p class="lede" style="font-size:14.5px;">Our stages have featured speakers, mentors and collaborators from institutions including:</p>
     </div>
-    <div class="shell partner-chips reveal">
-      <span>PETRONAS</span>
-      <span>CIMB Bank</span>
-      <span>Axiata Group</span>
-      <span>YTL AI Labs</span>
-      <span>ADA</span>
-      <span>Kolej Yayasan Saad</span>
-      <span>Intel</span>
+    <div class="ticker reveal" aria-label="Partner institutions">
+      <div class="rail">
+        <span>PETRONAS</span><span class="sep">✦</span>
+        <span>CIMB Bank</span><span class="sep">✦</span>
+        <span>Axiata Group</span><span class="sep">✦</span>
+        <span>YTL AI Labs</span><span class="sep">✦</span>
+        <span>ADA</span><span class="sep">✦</span>
+        <span>Kolej Yayasan Saad</span><span class="sep">✦</span>
+        <span>Intel</span><span class="sep">✦</span>
+        <span aria-hidden="true">PETRONAS</span><span class="sep" aria-hidden="true">✦</span>
+        <span aria-hidden="true">CIMB Bank</span><span class="sep" aria-hidden="true">✦</span>
+        <span aria-hidden="true">Axiata Group</span><span class="sep" aria-hidden="true">✦</span>
+        <span aria-hidden="true">YTL AI Labs</span><span class="sep" aria-hidden="true">✦</span>
+        <span aria-hidden="true">ADA</span><span class="sep" aria-hidden="true">✦</span>
+        <span aria-hidden="true">Kolej Yayasan Saad</span><span class="sep" aria-hidden="true">✦</span>
+        <span aria-hidden="true">Intel</span><span class="sep" aria-hidden="true">✦</span>
+      </div>
     </div>
   </section>
 
@@ -112,34 +123,50 @@
         <p class="lede">A leadership pipeline running from secondary school residencies to CEO-grade development — ELA keeps every graduate connected for life.</p>
       </div>
 
-      <div class="grid c4">
-        <a class="card t-amber reveal" href="ecosystem.html#sldp">
-          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg></div>
-          <h3>SLDP</h3>
-          <p class="full-name">School Leadership Development Programme</p>
-          <p style="margin-top:10px;">A fully funded five-year residential leadership incubator with Kolej Yayasan Saad — the grassroots entry point of the pipeline.</p>
-          <span class="tag">Secondary · KYS Melaka</span>
+      <div class="track-rows">
+        <a class="track-row t-amber reveal" href="ecosystem.html#sldp">
+          <span class="tn" aria-hidden="true">01</span>
+          <div>
+            <h3>SLDP <span class="fn">School Leadership Development Programme</span></h3>
+            <p class="desc">A fully funded five-year residential leadership incubator with Kolej Yayasan Saad — the grassroots entry point of the pipeline.</p>
+          </div>
+          <div class="side">
+            <span class="tag2">Secondary · KYS Melaka</span>
+            <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </div>
         </a>
-        <a class="card t-blue reveal" href="ecosystem.html#uldp">
-          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v5.25l4.5 2.67-.75 1.23L11 13V7h2z"/></svg></div>
-          <h3>ULDP</h3>
-          <p class="full-name">University Leadership Development Programme</p>
-          <p style="margin-top:10px;">Over fifteen years of sharpening Malaysia's most promising undergraduates through the AYTP leadership curriculum.</p>
-          <span class="tag">15+ Years Running</span>
+        <a class="track-row t-blue reveal" href="ecosystem.html#uldp">
+          <span class="tn" aria-hidden="true">02</span>
+          <div>
+            <h3>ULDP <span class="fn">University Leadership Development Programme</span></h3>
+            <p class="desc">Over fifteen years of sharpening Malaysia's most promising undergraduates through the AYTP leadership curriculum.</p>
+          </div>
+          <div class="side">
+            <span class="tag2">15+ Years Running</span>
+            <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </div>
         </a>
-        <a class="card t-purple reveal" href="ecosystem.html#adlp">
-          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h7v8l10-12h-7l0-8z"/></svg></div>
-          <h3>ADLP</h3>
-          <p class="full-name">Axiata Digital Leaders Programme</p>
-          <p style="margin-top:10px;">Shaping digital-first leaders equipped for the technology frontier of ASEAN's corporate landscape.</p>
-          <span class="tag">Digital Leadership</span>
+        <a class="track-row t-purple reveal" href="ecosystem.html#adlp">
+          <span class="tn" aria-hidden="true">03</span>
+          <div>
+            <h3>ADLP <span class="fn">Axiata Digital Leaders Programme</span></h3>
+            <p class="desc">Shaping digital-first leaders equipped for the technology frontier of ASEAN's corporate landscape.</p>
+          </div>
+          <div class="side">
+            <span class="tag2">Digital Leadership</span>
+            <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </div>
         </a>
-        <a class="card t-red reveal" href="ecosystem.html#ycdp">
-          <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM4 22v-2c0-2.8 3.6-4.5 8-4.5s8 1.7 8 4.5v2H4zm8-9c-2.2 0-4-1.8-4-4h8c0 2.2-1.8 4-4 4z"/></svg></div>
-          <h3>YCDP</h3>
-          <p class="full-name">Young CEO Development Programme</p>
-          <p style="margin-top:10px;">Twelve-plus years of grooming young executives on the accelerated path to C-suite readiness.</p>
-          <span class="tag">12+ Years Running</span>
+        <a class="track-row t-red reveal" href="ecosystem.html#ycdp">
+          <span class="tn" aria-hidden="true">04</span>
+          <div>
+            <h3>YCDP <span class="fn">Young CEO Development Programme</span></h3>
+            <p class="desc">Twelve-plus years of grooming young executives on the accelerated path to C-suite readiness.</p>
+          </div>
+          <div class="side">
+            <span class="tag2">12+ Years Running</span>
+            <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          </div>
         </a>
       </div>
 
@@ -237,11 +264,11 @@
         </div>
         <p style="margin-top:28px;"><a class="btn btn-navy" href="media.html">Open the Media Gallery</a></p>
       </div>
-      <div class="photo-grid reveal" style="grid-template-columns:repeat(2,1fr);">
-        <button class="photo-cell" onclick="ELA.openPhoto('assets/img/gallery/p02_ela.jpg','ELA Run & Makan at Perdana Botanical Garden, KL')"><img loading="lazy" src="assets/img/gallery/p02_ela.jpg" alt="ELA Run and Makan community event"><span class="ch">ELA</span></button>
-        <button class="photo-cell" onclick="ELA.openPhoto('assets/img/gallery/p00_ela.jpg','Coffee Circle — café-style community forum')"><img loading="lazy" src="assets/img/gallery/p00_ela.jpg" alt="ELA Coffee Circle forum"><span class="ch">ELA</span></button>
-        <button class="photo-cell" onclick="ELA.openPhoto('assets/video/v00_ela.jpg','The ELA community at Run & Makan')"><img loading="lazy" src="assets/video/v00_ela.jpg" alt="ELA community group photo"><span class="ch">ELA</span></button>
-        <button class="photo-cell" onclick="ELA.openPhoto('assets/video/v06_ela.jpg','In Frequency — cybersecurity panel')"><img loading="lazy" src="assets/video/v06_ela.jpg" alt="ECL panel discussion"><span class="ch">ECL</span></button>
+      <div class="photo-stagger reveal" style="grid-template-columns:repeat(2,1fr);">
+        <button onclick="ELA.openPhoto('assets/img/gallery/p02_ela.jpg','ELA Run & Makan at Perdana Botanical Garden, KL')"><img loading="lazy" src="assets/img/gallery/p02_ela.jpg" alt="ELA Run and Makan community event"><span class="cap">Run &amp; Makan · KL</span></button>
+        <button onclick="ELA.openPhoto('assets/img/gallery/p00_ela.jpg','Coffee Circle — café-style community forum')"><img loading="lazy" src="assets/img/gallery/p00_ela.jpg" alt="ELA Coffee Circle forum"><span class="cap">Coffee Circle</span></button>
+        <button onclick="ELA.openPhoto('assets/video/v00_ela.jpg','The ELA community at Run & Makan')"><img loading="lazy" src="assets/video/v00_ela.jpg" alt="ELA community group photo"><span class="cap">The community</span></button>
+        <button onclick="ELA.openPhoto('assets/video/v06_ela.jpg','In Frequency — cybersecurity panel')"><img loading="lazy" src="assets/video/v06_ela.jpg" alt="ECL panel discussion"><span class="cap">In Frequency panel</span></button>
       </div>
     </div>
   </section>
